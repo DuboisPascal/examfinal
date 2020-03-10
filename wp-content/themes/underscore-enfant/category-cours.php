@@ -23,14 +23,16 @@ get_header();
 			</header><!-- .page-header -->
 
 
-
+            <div class="grilleCours">
 			<?php
             /* Start the Loop */
             $temp=0;
             while ( have_posts() ) :
                 $temp=$temp+1;
 				the_post();
-                echo '<a href="'.get_post_permalink().'">'.$temp.". " . get_the_title() . '<span style="color:red"> - Session: '.substr(get_the_title(),4,1).'</span> <span style="color:blue">- Domaine: '.substr(get_the_title(),5,1).'</span></a><br>';
+                //echo '<a href="'.get_post_permalink().'">'.$temp.". " . get_the_title() . '<span style="color:red"> - Session: '.substr(get_the_title(),4,1).'</span> <span style="color:blue">- Domaine: '.substr(get_the_title(),5,1).'</span></a><br>';
+
+                echo '<a  href="'.get_post_permalink().'" style="grid-area: '.substr(get_the_title(),4,1) .'/'.substr(get_the_title(),5,1).'" >' . substr(get_the_title(),0,7) . '</a>';
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
@@ -46,7 +48,8 @@ get_header();
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
-		?>
+        ?>
+        </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
