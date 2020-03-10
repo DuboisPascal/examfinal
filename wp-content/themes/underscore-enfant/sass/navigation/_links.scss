@@ -1,0 +1,14 @@
+a {
+	&:visited {
+		color: $couleurMauve;
+	}
+	&:hover{
+		color:$couleurRouge;
+	}
+	&:focus{
+		color:$couleurBleue;
+	}
+	&:active{
+		color:$couleurVerte;
+	}
+}

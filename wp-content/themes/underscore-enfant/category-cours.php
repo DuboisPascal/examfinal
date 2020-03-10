@@ -25,10 +25,12 @@ get_header();
 
 
 			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
+            /* Start the Loop */
+            $temp=0;
+            while ( have_posts() ) :
+                $temp=$temp+1;
 				the_post();
-                echo '<h4>' . get_the_title() . '</h4>';
+                echo '<a href="'.get_post_permalink().'">'.$temp.". " . get_the_title() . '<span style="color:red"> - Session: '.substr(get_the_title(),4,1).'</span> <span style="color:blue">- Domaine: '.substr(get_the_title(),5,1).'</span></a><br>';
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
