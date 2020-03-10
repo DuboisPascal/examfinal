@@ -1,0 +1,9 @@
+@mixin rayure {
+    background: repeating-linear-gradient(
+        45deg,
+        $couleurRayure1,
+        $couleurRayure1 10px,
+        $couleurRayure2 10px,
+        $couleurRayure2 20px
+);
+}

@@ -186,5 +186,16 @@ a:active {
       grid-template-columns: 1fr,1fr,1fr,1fr,1fr;
   -ms-grid-rows: 1fr,1fr,1fr,1fr,1fr,1fr;
       grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr;
+  background-color: #7ea4dd;
+}
+
+.top {
+  background: repeating-linear-gradient(45deg, skyblue, skyblue 10px, crimson 10px, crimson 20px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr,1fr,1fr,1fr,1fr;
+      grid-template-columns: 1fr,1fr,1fr,1fr,1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 /*# sourceMappingURL=style.css.map */

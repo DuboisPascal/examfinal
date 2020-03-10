@@ -23,6 +23,17 @@ get_header();
 			</header><!-- .page-header -->
 
 
+
+            <div class="top">
+
+            <p style="grid-area:1/1">Environnement</p>
+            <p style="grid-area:1/2">Animation</p>
+            <p style="grid-area:1/3">Design</p>
+            <p style="grid-area:1/4">Programmation</p>
+            <p style="grid-area:1/5">Intégration</p>
+            </div>
+
+
             <div class="grilleCours">
 			<?php
             /* Start the Loop */
